@@ -1,6 +1,6 @@
 let t = 0;
-let date = new Date().getSeconds();
-let NUM_LINES = date * 5;
+let minutes = new Date().getMinutes();
+let NUM_LINES = 128 + minutes;
 
 let year = new Date().getFullYear();
 
@@ -19,10 +19,12 @@ function draw() {
   background(33, 37, 41);
   strokeWeight(1);
   translate(width / 2, height / 2);
-  stroke(sin(t/12) * height/8, sin(t/24) * width/4, 255, 75);
+  stroke(sin(t/12) * height/8, sin(t/24) * width/4, 255, minutes + 24);
 
   for (var i = 0; i < NUM_LINES; i++) {
     line(x1(t + i), y1(t + i), x2(t + i), y2(t + i));
+    minutes = new Date().getMinutes();
+    NUM_LINES = minutes !== 0 ? 128 + minutes : 128;
   }
 
   t += 0.05;

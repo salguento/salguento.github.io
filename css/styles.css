@@ -48,7 +48,11 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255,255,255, 0.3));
+  --bs-dark-rgb: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.3)
+  );
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-rgb: 33, 37, 41;
@@ -69,7 +73,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #fff;
-  --bs-body-bg: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255,255,255, 0.3));
+  --bs-body-bg: #212529;
 }
 
 *,
@@ -11729,7 +11733,6 @@ header.masthead .h1 {
 }
 .testimonials .testimonial-item img {
   max-width: 12rem;
-  box-shadow: 2px 2px 2px 2px #6610f2;
 }
 
 .call-to-action {
@@ -11755,3 +11758,16 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+.component {
+  background-color: var(--bs-body-bg);
+  border-radius: 25px;
+  border-style: solid;
+  border-color: var(--bs-body-bg);
+}
+
+.component:hover{
+  border-style: solid;
+  border-color: #20c997;
+}
+
