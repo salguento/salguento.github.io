@@ -1,0 +1,1 @@
+import{_ as s}from"./_plugin-vue_export-helper.a1a6add7.js";import{o,F as t,G as c,Q as r}from"./entry.0a6051c2.js";const a={},n={class:"h-screen w-screen"},l={class:"h-full w-full"};function _(e,d){return o(),t("div",n,[c("div",l,[r(e.$slots,"default")])])}const m=s(a,[["render",_]]);export{m as default};

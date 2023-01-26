@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper.a1a6add7.js";import{o as r,F as s,Q as o}from"./entry.0a6051c2.js";const c={},l={class:"flex h-full w-full flex-col items-center justify-center gap-y-8 md:grid md:grid-cols-2 md:items-start md:gap-x-8 lg:grid-cols-3"};function n(e,a){return r(),s("div",l,[o(e.$slots,"default")])}const i=t(c,[["render",n]]);export{i as default};
